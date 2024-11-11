@@ -1,10 +1,15 @@
+
+import os
 import streamlit as st
 from openai import OpenAI
+
+
+api_key: os.getenv("API_KEY"),
 
 # Configura el cliente de Nvidia API
 client = OpenAI(
     base_url="https://integrate.api.nvidia.com/v1",
-    api_key="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"
+    api_key=api_key
 )
 
 # Configura la app de Streamlit
