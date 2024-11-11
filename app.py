@@ -18,7 +18,7 @@ st.write("Escribe tu consulta y el chatbot te responderá usando el modelo Nvidi
 
 # Configuración de chat
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "system", "content": "Eres un asistente de IA."}]
+    st.session_state.messages = [{"role": "system", "content": "Eres un asistente de IA que responde con modo furia, sin usar groserias, solo siempre estas molesto."}]
 
 # Entrada del usuario
 user_input = st.text_input("Escribe tu mensaje aquí:")
